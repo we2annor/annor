@@ -10,9 +10,9 @@ class Backgrounds extends Component {
             backgrounds : [
                 {'id':'blue','pathname':'/','position':'center bottom', 'image':'index.jpg'},
                 {'id':'white','pathname':'/stories','position':'bottom center', 'image':'home.jpg'},
-                {'id':'pink','pathname':'/stories/1982','position':'bottom center', 'image':'home.jpg'},
-                {'id':'yellow','pathname':'/stories/1986','position':'bottom center', 'image':'home.jpg'},
-                {'id':'orange','pathname':'/stories/1992','position':'bottom center', 'image':'home.jpg'},
+                {'id':'pink','pathname':'/stories/1982','position':'bottom center', 'image':'2014.jpg'},
+                {'id':'yellow','pathname':'/stories/1986','position':'bottom center', 'image':'2016.jpg'},
+                {'id':'orange','pathname':'/stories/1992','position':'bottom center', 'image':'orange.jpg'},
                 {'id':'red','pathname':'/experience','position':'bottom center', 'image':'about.jpg'},
                 {'id':'green','pathname':'/projects','position':'bottom bottom', 'image':'project.jpg'}
             ]
@@ -23,8 +23,6 @@ class Backgrounds extends Component {
         const backgrounds = this.state.backgrounds
         const currentBackground =_.find(backgrounds, {'pathname' : this.props.location.pathname})
         const currentBackgroundID = currentBackground.id
-
-        console.log(this.props.location.pathname)
 
         return(
             <div className="backgrounds">

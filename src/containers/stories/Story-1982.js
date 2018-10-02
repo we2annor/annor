@@ -5,9 +5,15 @@ import { request } from '../../lib/app/actions'
 import '../../styles/containers/stories/story-1982.css'
 
 class S1982 extends Component {
-            next(){
-                this.props.request('/story/1986')
-            }
+    constructor(props){
+        super(props)
+    }
+
+    componentWillMount = () => {
+    }
+
+    next = () => {
+    }
 
     render(){
 

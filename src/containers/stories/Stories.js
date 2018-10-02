@@ -31,8 +31,15 @@ class Stories extends Component {
         }
     }
 
+
+
+    change = () => {
+
+    }
+
     componentWillMount = () => {
-        this.props.change(this.onPageChange);
+        const {match: { params }} = this.props
+        this.setState({year : params.year})
     }
 
     onPageChange = () => {
@@ -49,7 +56,7 @@ class Stories extends Component {
         }
     }
 
-    previous(){
+    previous = () => {
         var index = this.getStoriesIndex() - 1
         if(index >= 0){
             const story = this.state.stories[index]
@@ -57,22 +64,23 @@ class Stories extends Component {
         }
     }
 
-    next(){
+    next = () => {
         var index = this.getStoriesIndex() + 1
         if(index != this.state.stories.length){
             const story = this.state.stories[index]
-            this.props.request('/story/' + story.year)
+            this.props.request('/story/:' + story.year)
         }
-        console.log(this.props.app.history)
     }
 
     getYear = () => {
         var year = '1982'
+
         if(this.props.app.pages){
             if(this.props.app.pages.hasOwnProperty('year')){
-                year = this.props.app.pages.year
+                year = this.props.app.page.year
             }
         }
+
         return year
     }
 
@@ -116,11 +124,6 @@ class Stories extends Component {
         if(storiesIndex + 1 == this.state.stories.length){
             styles.next.display = 'none'
         }
-
-        console.log(this.getStoriesIndex() + 1)
-        console.log(this.getStoryIndex)
-        console.log(this.state.stories.length)
-        //console.log(this.props.change(this.props.location.pathname))
 
         return(
                 <Scrollbars id="stories" className="page stories" style={{width:'100%',height:'100%'}} onScrollFrame={this.handleScroll.bind(this)} autoHide>

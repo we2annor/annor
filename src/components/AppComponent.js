@@ -18,7 +18,6 @@ class AppComponent extends Component {
             'menu-visible' : this.props.navigationReducer.visible
         })
 
-        console.log(this.props.match)
         return(
             <div className={classes} data-page={this.props.location.pathname}>
                 <Backgrounds location={this.props.location} />
