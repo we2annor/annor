@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Motion, spring } from 'react-motion'
-import { request } from '../../lib/app/actions'
+import { change, request } from '../../lib/app/actions'
 import '../../styles/containers/stories/story-1982.css'
 
 class S1982 extends Component {
@@ -10,9 +10,11 @@ class S1982 extends Component {
     }
 
     componentWillMount = () => {
+        
     }
 
     next = () => {
+        this.props.change(this.props.location)
     }
 
     render(){

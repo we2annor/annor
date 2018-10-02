@@ -33,7 +33,7 @@ const app = (state= initialState, action) => {
         case 'CHANGE':
             state = {
                 ...state,
-                page: action.payload
+                location: action.payload
             }
             break;
         case 'REQUEST':
@@ -41,6 +41,7 @@ const app = (state= initialState, action) => {
                 ...state,
                 history: action.payload
             }
+
         default:
     }
     return state;

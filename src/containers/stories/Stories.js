@@ -27,7 +27,8 @@ class Stories extends Component {
             ],
             year: '',
             storiesIndex: 0,
-            story: {}
+            story: {},
+            page : this.props.match.params
         }
     }
 
@@ -38,8 +39,7 @@ class Stories extends Component {
     }
 
     componentWillMount = () => {
-        const {match: { params }} = this.props
-        this.setState({year : params.year})
+        this.props.change(this.props.location.pathname)
     }
 
     onPageChange = () => {
@@ -72,20 +72,22 @@ class Stories extends Component {
         }
     }
 
+    getParam = () => {
+        return this.props.match.params.year
+    }
+
     getYear = () => {
         var year = '1982'
-
-        if(this.props.app.pages){
-            if(this.props.app.pages.hasOwnProperty('year')){
-                year = this.props.app.page.year
-            }
+        const page = _.find(this.state.stories,{'year': this.getParam()})
+        if(page){
+            year = page.year
         }
-
         return year
     }
 
     getStoriesIndex = () => {
         const index = _.findIndex(this.state.stories,{'year': this.getYear()})
+        console.log(index)
         return index
     }
 
