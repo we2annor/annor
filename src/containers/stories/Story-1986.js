@@ -18,7 +18,7 @@ class S1986 extends Component {
                             <div className="content layer" data-depth="0.30">
                                 <div className="heading">
                                     <h1 className="year">1986</h1>
-                                    <div className="label">My Story</div>
+                                    <div className="label">Moved to Sunyani</div>
                                     <div className="description">My dad, a Ghana prisons Officer was transfered to Sunyani, the brong ahafo region of Ghana. So the family had to relocate. I must say i didnt see much.</div>
                                 </div>
                             </div>

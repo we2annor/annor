@@ -1,6 +1,7 @@
 {
   "name": "ea",
   "version": "0.1.0",
+  "homepage": "http://we2annor.github.io/annor",
   "private": false,
   "dependencies": {
     "classnames": "^2.2.6",
@@ -28,11 +29,15 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.0.0"
+  },
   "author": "Ernest Annor",
   "license": "ISC"
 }

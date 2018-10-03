@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Motion, spring } from 'react-motion'
+import '../../styles/containers/stories/story-1992.css'
 
 class S1992 extends Component {
             next(){
@@ -16,7 +17,7 @@ class S1992 extends Component {
                             <div className="content layer" data-depth="0.30">
                                 <div className="heading">
                                     <h1 className="year">1992</h1>
-                                    <div className="label">My Story</div>
+                                    <div className="label">Moved from Sunyani back to Kumasi</div>
                                     <div className="description">Moved from Sunyani back to Kumasi. where I started drawing at school.</div>
                                 </div>
                             </div>
