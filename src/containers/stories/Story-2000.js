@@ -3,10 +3,6 @@ import { Motion, spring } from 'react-motion'
 import '../../styles/containers/stories/story-2000.css'
 
 class S2000 extends Component {
-    constructor(){
-        super()
-
-    }
 
     render(){
 

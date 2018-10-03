@@ -82,8 +82,6 @@ class Experience extends Component {
                                             <div className="inner">
                                                 <h3>Websites</h3>
                                                 <p>I've been building websites since I was 16. Back then, Flash was the prevailing / cool technology to use in building websites. On the advent of the iPad, Flash quickly became obsolete and was reduced to being used to build advertising units as opposed to full-fledged websites. The landscape quickly changed from users accessing websites only on desktops, to now accessing them from various devices such as mobiles, tablets, televisions, refrigerators and more. This is when we welcomed HTML5, allowing us to create websites for almost every type of device imaginable.</p>
-                                                <h3>Apps</h3>
-                                                <p>By using libraries such as Cordova and Ionic, I’m able to use the same toolset I use to build websites, to build mobile applications. More recently, however, I have been using React Native to build mobile applications.</p>
                                                 <h3>Servers</h3>
                                                 <p>I love JavaScript, and thanks to Node.js, I’m able to leverage my JavaScript knowledge to build fast, reliable backend services and APIs to power my applications. Using React on the server also allows me to drastically improve the load times of my applications.</p>
                                             </div>
@@ -167,3 +165,9 @@ const mapDistpatchToProps = (dispatch) => {
     }
 }
 export default connect(mapStateToProps, mapDistpatchToProps)(Experience)
+
+/*
+                                                <h3>Apps</h3>
+                                                <p>By using libraries such as Cordova and Ionic, I’m able to use the same toolset I use to build websites, to build mobile applications. More recently, however, I have been using React Native to build mobile applications.</p>
+
+*/

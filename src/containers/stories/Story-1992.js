@@ -3,9 +3,6 @@ import { Motion, spring } from 'react-motion'
 import '../../styles/containers/stories/story-1992.css'
 
 class S1992 extends Component {
-            next(){
-
-            }
 
     render(){
 

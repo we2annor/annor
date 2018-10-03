@@ -8,17 +8,18 @@ import '../../styles/containers/stories/story-1982.css'
 class S1982 extends Component {
     constructor(props){
         super(props)
+
+        this.state = {
+
+        }
     }
 
     componentWillMount = () => {
-        var path = this.props.request('/stories/1986')
-        history.push('/stories/1986')
+        //var path = this.props.request('/stories/1986')
     }
 
     next = () => {
         history.push('/stories/1986')
-        this.props.request('/stories/1986')
-        console.log(this.props)
     }
 
     render(){

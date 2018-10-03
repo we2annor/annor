@@ -82,7 +82,7 @@ class Projects extends Component {
                                                 <p>MOTO allows you to view your tax and MOT expiry dates, review your MOT history and check your vehicle's mileage history.</p>
 
                                                 <div className="app-store">
-                                                    <a href="https://itunes.apple.com/gb/app/moto-app/id1076608318" target="_blank" rel=""><img src="/images/app-store.png" alt="app store"/></a>
+                                                    <a href="https://itunes.apple.com/gb/app/moto-app/id1076608318" target="_blank" rel="noopener noreferrer"><img src="/images/app-store.png" alt="app store"/></a>
                                                 </div>
                                             </div>
                                         </div>

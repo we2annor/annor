@@ -3,11 +3,6 @@ import { Motion, spring } from 'react-motion'
 import '../../styles/containers/stories/story-1986.css'
 
 class S1986 extends Component {
-    constructor(){
-        super()
-
-    }
-
     render(){
 
         return(

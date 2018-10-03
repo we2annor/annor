@@ -23,5 +23,7 @@
     padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.2); }
 
-.story.story-2000 {
+.story.story-2018 {
   text-align: center; }
+  .story.story-2018 .content .get-in-touch {
+    margin-top: 30px; }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Email from './socialMediaSVG/Email'
+import EmailFilled from './socialMediaSVG/EmailFilled'
 import LinkedIn from './socialMediaSVG/LinkedIn'
+import Twitter from './socialMediaSVG/Twitter'
 import { connect } from 'react-redux'
 import  classNames  from 'classnames'
 import '../../styles/components/footer.css'
@@ -17,15 +18,18 @@ class Footer extends Component {
     }
     render(){
 
-        var style = {
+        let style = {
             opacity: 1,
             bottom: 0
         }
 
+
         if(this.state.menu.visible){
-            opacity: 0
+            style = {
+                opacity: 0
+            }
         }
-        
+
         const footerClasses = classNames({
             'menu-visible' : this.props.nav.visible
         })
@@ -35,13 +39,19 @@ class Footer extends Component {
                 <div className="links group">
                     <a href="mailto:contact@ernestannor.com">
                         <div className="link mail">
-                            <Email width="40" height="40" color="#e8e8e8"/>
+                            <EmailFilled width="35" height="35" color="#e8e8e8"/>
                         </div>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/ernest-annor-3b76667/" target="_blank">
+                    <a href="https://twitter.com/we2annor">
+                        <div className="link twitter">
+                            <Twitter width="35" height="35" color="#e8e8e8"/>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ernest-annor-3b76667/" target="_blank" rel="noopener noreferrer">
                         <div className="link linkedIn">
-                            <LinkedIn width="40" height="40" color="#e8e8e8"/>
+                            <LinkedIn width="35" height="35" color="#e8e8e8"/>
                         </div>
                     </a>
                 </div>

@@ -122,11 +122,11 @@ const mapStateToProps = (state) => {
 const mapDistpatchToProps = (dispatch) => {
     return{
         hideNavigation: () => {
-            dispatch(hideShadow())
+            dispatch(hideNavigation())
         },
 
         showNavigation : () => {
-            dispatch (showShadow())
+            dispatch (showNavigation())
         },
         showShadow : () => {
             dispatch(showShadow())

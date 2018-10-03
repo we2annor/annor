@@ -5,10 +5,8 @@ import { connect } from 'react-redux'
 import _ from 'lodash'
 import keydown from 'react-keydown'
 import { change, request } from '../../lib/app/actions'
-import { sayhello } from '../../lib/app/reducer'
 import Footer from '../../components/footer/Footer'
 import '../../styles/containers/stories/stories.css'
-import store from '../../store'
 
 import S1982 from './Story-1982'
 import S1986 from './Story-1986'
@@ -17,6 +15,7 @@ import S1997 from './Story-1997'
 import S2000 from './Story-2000'
 import S2001 from './Story-2001'
 import S2004 from './Story-2004'
+import S2018 from './Story-2018'
 
 
 class Stories extends Component {
@@ -32,7 +31,8 @@ class Stories extends Component {
                 {'year': '1997','component': <S1997/>},
                 {'year': '2000','component': <S2000/>},
                 {'year': '2001','component': <S2001/>},
-                {'year': '2004','component': <S2004/>}
+                {'year': '2004','component': <S2004/>},
+                {'year': '2018','component': <S2018/>}
             ],
             year: '',
             storiesIndex: 0,
@@ -75,7 +75,7 @@ class Stories extends Component {
 
     next = () => {
         var index = this.getStoriesIndex() + 1
-        if(index != this.state.stories.length){
+        if(index !== this.state.stories.length){
             const story = this.state.stories[index]
             this.props.history.push('/stories/' + story.year)
         }
@@ -127,11 +127,11 @@ class Stories extends Component {
             }
         }
 
-        if(storiesIndex == 0){
+        if(storiesIndex === 0){
             styles.nav.display =  'none'
         }
 
-        if(storiesIndex + 1 == this.state.stories.length){
+        if(storiesIndex + 1 === this.state.stories.length){
             styles.next.display = 'none'
         }
 

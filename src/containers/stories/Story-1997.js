@@ -3,10 +3,6 @@ import { Motion, spring } from 'react-motion'
 import '../../styles/containers/stories/story-1997.css'
 
 class S1997 extends Component {
-    constructor(){
-        super()
-
-    }
 
     render(){
 

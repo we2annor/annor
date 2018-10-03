@@ -29,6 +29,7 @@ const app = (state= initialState, action) => {
                 ...state,
                 shadow : false
             }
+            break;
         case 'CHANGE':
             state = {
                 ...state,
@@ -49,7 +50,7 @@ const app = (state= initialState, action) => {
                 ...state,
                 history: action.payload
             }
-
+            break
         default:
     }
     return state;
