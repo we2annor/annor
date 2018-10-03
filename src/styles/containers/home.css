@@ -32,12 +32,18 @@
     top: 50px;
     width: 100%; }
     .page.home .main-links .bio .content {
-      width: 80%;
+      width: 50%;
       margin: auto;
       top: 0;
       color: #ffffff;
       font-size: 1.2em;
       font-weight: 400; }
+      .page.home .main-links .bio .content .header-title {
+        margin-bottom: 20px; }
+      .page.home .main-links .bio .content .header-text {
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 1.7em; }
   .page.home .main-links .link {
     display: block;
     margin: auto;
@@ -48,7 +54,8 @@
     -o-transition: opacity 0.3s;
     transition: opacity 0.3;
     cursor: pointer;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-top: 140px; }
     .page.home .main-links .link .link-content {
       position: relative;
       display: inline-block;

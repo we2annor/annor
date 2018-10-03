@@ -3,7 +3,7 @@ const initialState = {
     hidden: true,
     pages : [
                 {'id':'home','title':'Home','path':'/'},
-                {'id':'story','title':'My Story','path':'/stories'},
+                {'id':'story','title':'My Story','path':'/stories/1982'},
                 {'id':'experience','title':'My Experience','path':'/experience'},
                 {'id':'project','title':'My Projects','path':'/projects'}
     ]

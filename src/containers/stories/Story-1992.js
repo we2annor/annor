@@ -17,7 +17,7 @@ class S1992 extends Component {
                                 <div className="heading">
                                     <h1 className="year">1992</h1>
                                     <div className="label">My Story</div>
-                                    <div className="description"></div>
+                                    <div className="description">Moved from Sunyani back to Kumasi. where I started drawing at school.</div>
                                 </div>
                             </div>
                         </div>

@@ -11,8 +11,9 @@
       font-weight: 400;
       margin-bottom: 10px; }
     .story .content .heading .label {
+      font-size: 2em;
       font-weight: 300;
-      font-size: 2em; }
+      padding-bottom: 20px; }
   .story .content .description {
     margin: auto;
     width: 100%;

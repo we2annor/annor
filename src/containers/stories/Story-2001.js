@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Motion, spring } from 'react-motion'
 import '../../styles/containers/stories/story-1986.css'
 
-class S1986 extends Component {
+class S2001 extends Component {
     constructor(){
         super()
 
@@ -17,9 +17,9 @@ class S1986 extends Component {
                         <div style={{opacity: value.opacity, transform:`scale(${value.scale})`}}>
                             <div className="content layer" data-depth="0.30">
                                 <div className="heading">
-                                    <h1 className="year">1986</h1>
+                                    <h1 className="year">2001</h1>
                                     <div className="label">My Story</div>
-                                    <div className="description">My dad, a Ghana prisons Officer was transfered to Sunyani, the brong ahafo region of Ghana. So the family had to relocate. I must say i didnt see much.</div>
+                                    <div className="description">Flash and Dreamweaver was what was used for website development at the stage. I took a course in both basic and advance in both flash and dreaweaver. And with this my first website Known as Outlandish spices, was created.</div>
                                 </div>
                             </div>
                         </div>
@@ -30,4 +30,4 @@ class S1986 extends Component {
     }
 }
 
-export default S1986
+export default S2001

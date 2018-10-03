@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import history from '../../history'
 import { Motion, spring } from 'react-motion'
 import { change, request } from '../../lib/app/actions'
 import '../../styles/containers/stories/story-1982.css'
@@ -11,18 +12,19 @@ class S1982 extends Component {
 
     componentWillMount = () => {
         var path = this.props.request('/stories/1986')
+        history.push('/stories/1986')
     }
 
     next = () => {
-        var path = this.props.request('/stories/1986,')
-        this.props.change('/stories/1986');
+        history.push('/stories/1986')
+        this.props.request('/stories/1986')
         console.log(this.props)
     }
 
     render(){
 
         return(
-            <div id="story" className="story story-1982" anotherProps="hello">
+            <div id="story" className="story story-1982">
                 <Motion defaultStyle={{opacity:0, scale: 0.5}} style={{opacity: spring(1), scale: spring(1)}}>
                     {value=>
                         <div style={{opacity: value.opacity, transform:`scale(${value.scale})`}}>
@@ -30,7 +32,7 @@ class S1982 extends Component {
                                 <div className="heading">
                                     <h1 className="year">1982</h1>
                                     <div className="label">My Story</div>
-                                    <div className="description">Born in Kumasi, Ghana, my passion for creativity and design was crafted from my love for drawing. I loved to draw as a child.</div>
+                                    <div className="description">It was Kumasi the Ashanti region of Ghana, where it all begun.  I had a passion for drawing and being creative.</div>
                                     <div className="btn btn-outline next" onClick={this.next.bind(this)}>NEXT</div>
                                 </div>
                             </div>

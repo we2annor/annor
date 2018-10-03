@@ -57,14 +57,14 @@ class Home extends Component {
 
                                 <div className="bio">
                                     <div className="content">
-                                        <div>FrontEnd Developer</div>
-                                        <div></div>
+                                        <div className="header-title">FrontEnd Developer</div>
+                                        <div className="header-text">A self-taught developer with a focus on frontend engineering, aesthetics, and user experience. Creative, curious, and always looking to learn something new, I spend my free time bringing independent ideas to life and indulging my personal hobbies. Asking questions is part of who I am, and, as far as I'm concerned, there's always a better, faster, and more efficient way of getting things done.</div>
                                     </div>
                                 </div>
 
                                 <div className="navs">
 
-                                    <Link className="link group my-history" to="stories">
+                                    <Link className="link group my-history" to="stories/1982">
                                         <div className="link-content group">
                                             <div className="number">01</div>
 

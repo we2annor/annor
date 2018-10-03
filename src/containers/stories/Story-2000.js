@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Motion, spring } from 'react-motion'
 import '../../styles/containers/stories/story-1986.css'
 
-class S1986 extends Component {
+class S2000 extends Component {
     constructor(){
         super()
 
@@ -17,9 +17,9 @@ class S1986 extends Component {
                         <div style={{opacity: value.opacity, transform:`scale(${value.scale})`}}>
                             <div className="content layer" data-depth="0.30">
                                 <div className="heading">
-                                    <h1 className="year">1986</h1>
+                                    <h1 className="year">2000</h1>
                                     <div className="label">My Story</div>
-                                    <div className="description">My dad, a Ghana prisons Officer was transfered to Sunyani, the brong ahafo region of Ghana. So the family had to relocate. I must say i didnt see much.</div>
+                                    <div className="description">After high school, I took a diploma course in Information Technology. It was called IMIS (Institute for the Management of Information Systems). Where I had my first programming experience. Q-basic was the programming language I started with. Blings and colors were the cool thing we use to enjoy when coding. That was when we write psuedocodes before any coding is done on a project.</div>
                                 </div>
                             </div>
                         </div>
@@ -30,4 +30,4 @@ class S1986 extends Component {
     }
 }
 
-export default S1986
+export default S2000

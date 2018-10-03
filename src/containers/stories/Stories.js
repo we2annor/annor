@@ -13,6 +13,10 @@ import store from '../../store'
 import S1982 from './Story-1982'
 import S1986 from './Story-1986'
 import S1992 from './Story-1992'
+import S1997 from './Story-1997'
+import S2000 from './Story-2000'
+import S2001 from './Story-2001'
+import S2004 from './Story-2004'
 
 
 class Stories extends Component {
@@ -24,7 +28,11 @@ class Stories extends Component {
             stories : [
                 {'year': '1982','component': <S1982/>},
                 {'year': '1986','component': <S1986/>},
-                {'year': '1992','component': <S1992/>}
+                {'year': '1992','component': <S1992/>},
+                {'year': '1997','component': <S1997/>},
+                {'year': '2000','component': <S2000/>},
+                {'year': '2001','component': <S2001/>},
+                {'year': '2004','component': <S2004/>}
             ],
             year: '',
             storiesIndex: 0,
@@ -129,7 +137,7 @@ class Stories extends Component {
 
         return(
                 <Scrollbars id="stories" className="page stories" style={{width:'100%',height:'100%'}} onScrollFrame={this.handleScroll.bind(this)} autoHide>
-                    <div>
+                    <div history={this.props.history}>
                         {story.component}
                     </div>
 

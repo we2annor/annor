@@ -38,6 +38,15 @@ const app = (state= initialState, action) => {
         case 'REQUEST':
             state = {
                 ...state,
+                history: {
+                    ...state,
+                    history :  action.payload
+                }
+            }
+            break
+        case "SET_HISTORY":
+            state = {
+                ...state,
                 history: action.payload
             }
 
