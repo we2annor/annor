@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import _ from 'lodash'
 import keydown from 'react-keydown'
 import { change, request } from '../../lib/app/actions'
+import { sayhello } from '../../lib/app/reducer'
 import Footer from '../../components/footer/Footer'
 import '../../styles/containers/stories/stories.css'
 import store from '../../store'
@@ -60,7 +61,7 @@ class Stories extends Component {
         var index = this.getStoriesIndex() - 1
         if(index >= 0){
             const story = this.state.stories[index]
-            this.props.request('/story/' + story.year)
+            this.props.history.push('/stories/' + story.year)
         }
     }
 
@@ -68,7 +69,7 @@ class Stories extends Component {
         var index = this.getStoriesIndex() + 1
         if(index != this.state.stories.length){
             const story = this.state.stories[index]
-            this.props.request('/story/:' + story.year)
+            this.props.history.push('/stories/' + story.year)
         }
     }
 
@@ -87,7 +88,6 @@ class Stories extends Component {
 
     getStoriesIndex = () => {
         const index = _.findIndex(this.state.stories,{'year': this.getYear()})
-        console.log(index)
         return index
     }
 

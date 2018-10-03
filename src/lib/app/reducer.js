@@ -16,7 +16,6 @@ const initialState = {
     history: ''
 }
 
-
 const app = (state= initialState, action) => {
     switch (action.type) {
         case 'SHOW_SHADOW':

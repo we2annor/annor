@@ -10,17 +10,19 @@ class S1982 extends Component {
     }
 
     componentWillMount = () => {
-        
+        var path = this.props.request('/stories/1986')
     }
 
     next = () => {
-        this.props.change(this.props.location)
+        var path = this.props.request('/stories/1986,')
+        this.props.change('/stories/1986');
+        console.log(this.props)
     }
 
     render(){
 
         return(
-            <div id="story" className="story story-1982">
+            <div id="story" className="story story-1982" anotherProps="hello">
                 <Motion defaultStyle={{opacity:0, scale: 0.5}} style={{opacity: spring(1), scale: spring(1)}}>
                     {value=>
                         <div style={{opacity: value.opacity, transform:`scale(${value.scale})`}}>
@@ -42,7 +44,7 @@ class S1982 extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        apps: state.App
+        apps: state.App,
     }
 }
 
@@ -50,6 +52,9 @@ const mapDistpatchToProps = (dispatch) => {
     return{
         request: (path) => {
             dispatch(request(path))
+        },
+        change: (path) => {
+            dispatch(change(path))
         }
     }
 }
