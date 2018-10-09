@@ -2,7 +2,7 @@
   "name": "ea",
   "version": "0.1.0",
   "homepage": "https://we2annor.github.io/annor/",
-  "private": false,
+  "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
