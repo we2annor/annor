@@ -1,6 +1,5 @@
 * html .group {
-  zoom: 1;
-  border: 1px solid red; }
+  zoom: 1; }
 
 *:first-child + html .group {
   zoom: 1; }
@@ -44,6 +43,19 @@
         font-weight: 300;
         font-size: 1em;
         line-height: 1.7em; }
+  @media (max-width: 1099px) {
+    .page.home .main-links .bio .content {
+      width: 80%;
+      font-size: 1.1em; }
+    .page.home .main-links .bio .header-title {
+      margin-bottom: 18px; }
+    .page.home .main-links .bio .header-text {
+      line-height: 1.5em; }
+    .page.home .main-links .link {
+      margin-top: 100px; } }
+  .page.home .main-links .navs {
+    position: absolute;
+    width: 100%; }
   .page.home .main-links .link {
     display: block;
     margin: auto;
@@ -55,7 +67,7 @@
     transition: opacity 0.3;
     cursor: pointer;
     color: #ffffff;
-    margin-top: 140px; }
+    margin-top: 0; }
     .page.home .main-links .link .link-content {
       position: relative;
       display: inline-block;
@@ -92,8 +104,9 @@
         width: 100%;
         max-width: 320px; }
         .page.home .main-links .link.my-history {
-          border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-        .page.home .main-links .link.my-experienc {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          margin-top: 0; }
+        .page.home .main-links .link.my-experience {
           border-bottom: 1px solid rgba(255, 255, 255, 0.2); } }
     @media (min-width: 1100px) {
       .page.home .main-links .link {

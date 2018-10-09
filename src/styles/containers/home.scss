@@ -31,6 +31,32 @@
                 }
             }
 
+            @media(max-width: 1099px){
+                .bio {
+                    .content {
+                        width: 80%;
+                        font-size: 1.1em;
+                    }
+
+                    .header-title {
+                        margin-bottom: 18px;
+                    }
+
+                    .header-text {
+                        line-height: 1.5em;
+                    }
+                }
+
+                .link {
+                    margin-top: 100px;
+                }
+            }
+
+            .navs {
+                position: absolute;
+                width: 100%;
+            }
+
             .link {
                 display: block;
                 margin: auto;
@@ -42,7 +68,7 @@
                 transition: opacity 0.3;
                 cursor: pointer;
                 color: #ffffff;
-                margin-top: 140px;
+                margin-top: 0;
 
                 .link-content {
                     position: relative;
@@ -95,10 +121,11 @@
                     max-width: 320px;
 
                     &.my-history {
-                        border-bottom: 1px solid rgba(255,255,255,0.2)
+                        border-bottom: 1px solid rgba(255,255,255,0.2);
+                        margin-top: 0;
                     }
 
-                    &.my-experienc {
+                    &.my-experience {
                         border-bottom: 1px solid rgba(255,255,255,0.2)
                     }
                 }

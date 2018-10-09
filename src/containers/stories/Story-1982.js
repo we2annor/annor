@@ -1,25 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import history from '../../history'
 import { Motion, spring } from 'react-motion'
 import { change, request } from '../../lib/app/actions'
 import '../../styles/containers/stories/story-1982.css'
 
 class S1982 extends Component {
-    constructor(props){
-        super(props)
-
-        this.state = {
-
-        }
-    }
-
-    componentWillMount = () => {
-        //var path = this.props.request('/stories/1986')
-    }
 
     next = () => {
-        history.push('/stories/1986')
+        this.props.history.push('/stories/1986')
     }
 
     render(){

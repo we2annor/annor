@@ -25,14 +25,14 @@ class Stories extends Component {
         this.state = {
             showShadow : false,
             stories : [
-                {'year': '1982','component': <S1982/>},
-                {'year': '1986','component': <S1986/>},
-                {'year': '1992','component': <S1992/>},
-                {'year': '1997','component': <S1997/>},
-                {'year': '2000','component': <S2000/>},
-                {'year': '2001','component': <S2001/>},
-                {'year': '2004','component': <S2004/>},
-                {'year': '2018','component': <S2018/>}
+                {'year': '1982','component': S1982 },
+                {'year': '1986','component': S1986 },
+                {'year': '1992','component': S1992 },
+                {'year': '1997','component': S1997 },
+                {'year': '2000','component': S2000 },
+                {'year': '2001','component': S2001 },
+                {'year': '2004','component': S2004 },
+                {'year': '2018','component': S2018 }
             ],
             year: '',
             storiesIndex: 0,
@@ -135,11 +135,12 @@ class Stories extends Component {
             styles.next.display = 'none'
         }
 
+        const StoryComponent = story.component
+
         return(
                 <Scrollbars id="stories" className="page stories" style={{width:'100%',height:'100%'}} onScrollFrame={this.handleScroll.bind(this)} autoHide>
-                    <div history={this.props.history}>
-                        {story.component}
-                    </div>
+
+                    <StoryComponent history={this.props.history}/>
 
                     <div className="nav" style={styles.nav}>
                         <div className="previous" style={styles.previous} onClick={this.previous.bind(this)}>
